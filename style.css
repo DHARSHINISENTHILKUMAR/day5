@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('bricks.jfif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calculator {
+    background-color:lavender;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(85, 9, 9, 0.2);
+}
+
+.display {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.result {
+    font-size: 24px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.equal {
+    grid-column: span 4;
+    background: #4CAF50;
+    color: white;
+}
